@@ -15,9 +15,9 @@ RSpec.describe 'When a user visits a vending machine show page', type: :feature 
     dani = Owner.create(name: "Dani")
     machine1 = dani.machines.create(location: "Dani's Famous Vegan Thangs")
 
-    edamame = machine1.snacks.create(name: "Delicious soy treat", price: 1.99)
-    carrots = machine1.snacks.create(name: "Delicious carrot chip treat", price: 1.49)
-    pretzels = machine1.snacks.create(name: "Delicious pretzel treat", price: 1.29)
+    edamame = Snack.create(name: "Delicious soy treat", price: 1.99)
+    carrots = Snack.create(name: "Delicious carrot chip treat", price: 1.49)
+    pretzels = Snack.create(name: "Delicious pretzel treat", price: 1.29)
 
     MachineSnack.create(machine_id: machine1.id, snack_id: edamame.id)
     MachineSnack.create(machine_id: machine1.id, snack_id: carrots.id)
