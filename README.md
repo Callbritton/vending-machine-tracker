@@ -9,9 +9,13 @@ Vending machines may be stocked with different snacks, and the same snack may be
 ## Setup
 
 - Fork and clone this repo
-- Perform the usual setup steps after cloning a Rails application
-
-
+- Perform the usual setup steps after cloning a Rails application:
+```
+bundle install
+bundle update
+rails db:create
+rails db:migrate
+```
 
 ## Requirements
 
